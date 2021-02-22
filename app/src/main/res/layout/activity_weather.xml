@@ -11,6 +11,8 @@
         android:scaleType="centerCrop"/>
 
     <androidx.drawerlayout.widget.DrawerLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:openDrawer="start"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -46,9 +48,10 @@
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <fragment
-            android:id="@+id/choose_area_fragment"
+            android:id="@+id/choose_area_fragment2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="start"
             android:name="com.coolweather.android.ChooseAreaFragment" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
